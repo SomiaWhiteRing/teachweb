@@ -1,112 +1,8 @@
-@charset "utf-8";
-/* CSS Document */
-*{margin:0; padding:0; list-style:none; outline:none; background:none;
---imageWidth:968px;--arrowWidth:128px;--height:400px;}
-body{font-size:14px; font-family:"微软雅黑";}
-a:link,a:visited{color:#fff; text-decoration:none;}
-a:hover{text-decoration:none;}
-/*head*/ 
-.head{
-	width:980px; 
-	margin:0 auto; 
-	height:100px; 
-	padding-top:30px;  
-}
-.head .left{float:left;}
-.head .right{float:right;display: flex;align-items: center;}
-/*nav*/
-#nav{
-	width:100%; 
-	background:#6c7873;
-}
-.nav{
-	width:980px;  
-	height:35px;
-	line-height:35px;
-	margin:0 auto; 
-	text-align:center; 
-	font-size:14px;
-}
-.nav li{float:left;}
-.nav a{
-	display:inline-block; 
-	padding:0 40px;
-}
-.nav a:hover{background:#c0d1ca;}
-.nav .color_in{background:#c0d1ca;}
-/*box*/
-ul,
-li {
-    list-style: none;
-}
-.clear {
-    clear:both;
-}
+<html>
+    <head>
 
-#banner {
-    width:var(--imageWidth);
-}
-
-#box {
-    position:relative;
-width:var(--imageWidth);
-height:var(--height);
-overflow: hidden;
-margin: 0 auto;
-}
-
-#multi-circles {
-position:absolute;
-right:30px;
-bottom:10px;
-z-index: 2;
-}
-
-#multi-circles li {
-    float:left;
-    margin-right:15px;
-    width:10px;
-    height:10px;
-    border-radius: 100%;
-    background-color:rgb(240, 240, 240);
-    }
-
-#multi-images {
-    position:absolute;
-    left:0;
-    top:0;
-    z-index: 1;
-    width:calc(var(--imageWidth)*5);
-    height:var(--height);
-    transition: 1s;
-}
-
-#multi-images img {
-    float:left;
-    width:var(--imageWidth);
-    height:var(--height);
-}
-
-#arrow-right,
-#arrow-left {
-    cursor:pointer;
-    position: absolute;
-    top:50%;
-    margin-top:-20px;
-height:40px;
-z-index: 3;
-display:none;
-}
-
-#arrow-right {
-right:0;
-}
-
-#arrow-left {
-    left:0;
-}
-/*container*/
-.container{
+        <style type="text/css">
+        .container{
 	display: grid;
 	grid-template-columns: repeat(3, 167px 66px 12px) 167px 66px;
 	grid-template-rows: 25px 50px repeat(2,10px 131px 25px 20px) 25px;
@@ -152,12 +48,30 @@ right:0;
 .f3 {grid-column: 5; grid-row: 10;}
 .g3 {grid-column: 8; grid-row: 10;}
 .h3 {grid-column: 11; grid-row: 10;}
-/*footer*/
-.footer{
-	width:100%; 
-	height:60px; 
-	line-height:60px; 
-	text-align:center; 
-	background:#bfbfbf; 
-	color:rgb(0, 0, 0);
-}
+        </style>
+        </head>
+<body>
+
+    <div class="container">
+        <div class="heading">今日推荐2</div>
+        <div class="more"><img src="images/more.png" /></div>
+        <div class="item A">这里是图</div><div class="title a1">这里是标题</div>
+            <div class="commit a2">这里是作者</div><div class="star a3"><button type="button">收藏★</button></div>
+        <div class="item B">这里是图</div><div class="title b1">这里是标题</div>
+            <div class="commit b2">这里是作者</div><div class="star b3"><button type="button">收藏★</button></div>
+        <div class="item C">这里是图</div><div class="title c1">这里是标题</div>
+            <div class="commit c2">这里是作者</div><div class="star c3"><button type="button">收藏★</button></div>
+        <div class="item D">这里是图</div><div class="title d1">这里是标题</div>
+            <div class="commit d2">这里是作者</div><div class="star d3"><button type="button">收藏★</button></div>
+        <div class="item E">这里是图</div><div class="title e1">这里是标题</div>
+            <div class="commit e2">这里是作者</div><div class="star e3"><button type="button">收藏★</button></div>
+        <div class="item F">这里是图</div><div class="title f1">这里是标题</div>
+            <div class="commit f2">这里是作者</div><div class="star f3"><button type="button">收藏★</button></div>
+        <div class="item G">这里是图</div><div class="title g1">这里是标题</div>
+            <div class="commit g2">这里是作者</div><div class="star g3"><button type="button">收藏★</button></div>
+        <div class="item H">这里是图</div><div class="title h1">这里是标题</div>
+            <div class="commit h2">这里是作者</div><div class="star h3"><button type="button">收藏★</button></div>
+    </div>
+
+</body>
+</html>
